@@ -3,574 +3,233 @@
 
 <head>
     <meta charset="UTF-8">
-    <script src="https://kit.fontawesome.com/4d22968dc4.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/scrypt.js"></script>
     <link rel="stylesheet" href="scss/style.css">
-    <title>ForTest</title>
-    <meta name="viewport" content="width=device-width user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Food</title>
+    <style>
+        @font-face {
+            font-family: Gotam Pro;
+            src: url(fonts/KayakSansRegular.ttf);
+        }
+
+        P {
+            font-family: Gotam Pro;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <div class="page">
-            <div class="global-menu">
-                <div class="global-menu__image-eat"><img src="img/Menu_logo.png" alt=""></div>
-                <div class="global-menu__column">
-                    <ul class="global-menu__list">
-                        <li><a href="#">РЕЦЕПТЫ</a></li>
-                        <li><a href="#">ПРОДУКТЫ</a></li>
-                        <li><a href="#">КАК ПРИГОТОВИТЬ</a></li>
-                        <li><a href="#">КУЛИНАРНАЯ КНИГА</a></li>
-                        <li><a href="#">ЗДОРОВЬЕ</a></li>
-                        <li><a href="#">АВТОРЫ</a></li>
-                    </ul>
+    <div class="page">
+        <div class="wrapper">
+            <div class="block-1">
+                <div class="block-1__container">
+                    <img src="img/background__image-block-1.png" alt="#">
+                    <img src="img/major__pic-1.png" alt="#">
                 </div>
-                <div class="global-menu__lang">
-                    <div class="global-menu__enlish hover-on"><a href="#">RU</a></div>
-                    <div class="global-menu__russian hover-on"><a href="#">EN</a></div>
-                </div>
-                <div class="global-menu__icons">
-                    <div><img src="fonts/ivon__vk.png" alt="#"></div>
-                    <div><img src="fonts/icon__facebook1.png" alt="#"></div>
-                    <div><img src="fonts/-instagram_image.png" alt="#"></div>
-                    <div><img src="fonts/Google_+_hover.png" alt="#"></div>
+                <div class="block-1__text-container">
+                    <div class="block-1__text">
+                        There is no Sincerer
+                        Love than the <span>love
+                            of food.</span>
+                    </div>
+                    <div class="block-1__text-small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing.
+                    </div>
+                    <div class="block-1__btn">
+                        <a href="#"><span>Place an Order</span></a>
+                    </div>
                 </div>
             </div>
-            <div class="main-page">
-                <header class="header">
-                    <div class="wrapper">
-                        <div class="header-top">
-                            <div class="header-top__icons">
-                                <div class="header-top__lense"><a href="#">
-                                        <div class="header-top__input"><input type="text" /></div><img
-                                            src="fonts/Header__lense_1.png" alt="#">
-                                    </a>
-                                </div>
-                                <div class="header-top__bell"><a href="#"><img src="fonts/header_bell_1.png"
-                                            alt="#"></a>
-                                </div>
-                                <div class="header-top__avatar"><a href="#"><img src="fonts/Header_avatar_1.png"
-                                            alt="#"></a></div>
-                            </div>
-                            <div class="header-top__logo">
-                                <div class="header-top__line-1"></div>
-                                <div class="header-top__main-logo"><img src="img/header_logo.png" alt="#"></div>
-                                <div class="header-top__line-2"></div>
-                            </div>
-                            <div class="header-top__title">
-                                <div class="burger"><span></span></div> ПОДБОР РЕЦЕПТОВ
-                            </div>
-                            <div class="header-top__last-elements">
-                                <div class="header-top__menu">
-                                    <divv class="header-top__pop-up-items">
-                                        <div class="header-top__li-pop"><a href="#">Выпечка и десерты</a></div>
-                                        <div class="header-top__li-pop"><a href="#">Любое блюдо</a></div>
-                                        <div class="header-top__li-pop"><a href="#">Любая кухня</a></div>
-                                        <div class="header-top__li-pop"><a href="#">Любое меню</a></div>
-                                        <di class="header-top__li-pop"><a href="#">Сложность</a></di>
-                                    </divv>
-                                </div>
-                                <div class="header-top__btn">
-                                    <ul class="header-top__btn-container">
-                                        <li class="header-top__btn-header-normal"><a href="#">Ингредиенты, детали</a>
+            <div class="block-2">
+                <div class="block-2__container">
+                    <img src="img/major__pic-2.png" alt="#">
+                </div>
+                <div class="block-2__text-container">
+                    <div class="block-2__text">
+                        Discover restaurants that <span>
+                            deliver
+                            near you.
+                        </span>
+                    </div>
+                    <div class="block-2__form-text">
+                        <input type="text" placeholder="Enter your delivery address">
+                    </div>
+                    <div class="block-2__btn">
+                        <a href="#"><span>Find Food</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="block-3">
+                <div class="block-3__container">
+                    <img class="block-3__back-image-cc" src="img/block-3__cc.png" alt="#">
+                    <img class="block-3__back-image" src="img/background-image-2.png" alt="#">
+                </div>
+                <div class="block-3__text">
+                    <div class="block-3__text-container">
+                        Find food you love from local
+                        restaurants and chain <span>favourites.</span>
+                    </div>
+                    <div class="block-3__btn">
+                        <a href="#"><span>Find Food</span></a>
+                    </div>
+                </div>
+                <div class="block-3__image-phone">
+                    <img class="block-3__picture-phone" src="img/major__pic-3-phone-screen.png" alt="#">
+                    <img class="block-3__picture-buttom" src="img/major__pic-3-element-on-the-bottom.png" alt="#">
+                    <img class="block-3__picture-screen" src="img/major__pic-5-shape-of-phone.png" alt="#">
+                    <img class="block-3__picture-1" src="img/Rectangle_1.png" alt="#">
+                    <img class="block-3__picture-2" src="img/major__pic-3-image-on-phone-out-side.png" alt="#">
+                    <img class="block-3__picture-3" src="img/major__pic-3-image-on-phone-1.png" alt="#">
+                    <img class="block-3__picture-lvl-batery" src="img/battarey-level.png" alt="#">
+                    <img class="block-3__picture-bell" src="img/BELL.png" alt="#">
+                    <img class="block-3__picture-uber" src="img/major__pic-3-Uber-easts.png" alt="#">
+                    <img class="block-3__picture-wifi" src="img/wifi.png" alt="#">
+                    <img class="block-3__picture-under30minutes" src="img/Under_30_minutes.png" alt="#">
+                    <img class="block-3__picture-sort-restorant" src="img/Sort_Restaurants.png" alt="#">
+                    <img class="block-3__picture-sam-cofe"
+                        src="img/Sam’s_Cafe____________________________________25-30_MIN.png" alt="#">
+                    <img class="block-3__picture-filter-on-top" src="img/Rounded_Rectangle_4_copy_2.png" alt="#">
+                    <img class="block-3__picture-nov-cafe" src="img/Nov’s_Cafe.png" alt="#">
+                    <img class="block-3__picture-percent" src="img/percent.png" alt="#">
+                    <img class="block-3__picture-on-edge" src="img/img__on-phone-shadow-on-edge-image.png" alt="#">
+                    <img class="block-3__picture-burger" src="img/burger-text.png" alt="#">
+                    <img class="block-3__picture-burger-1" src="img/burger-text.png" alt="#">
+                    <img class="block-3__picture-shadow" src="img/major__pic-3-shadow-under-phone.png" alt="#">
+                </div>
+            </div>
+            <div class="block-4">
+                <div class="block-4__container">
+                    <img src="img/major__pic-4.png" alt="#">
+                </div>
+                <div class="block-4__text">
+                    <div class="block-4__text-container">
+                        Tap to place your order and</br>
+                        pay with your <span>Uber account.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="block-5">
+                <div class="block-5__container">
+                    <img src="img/block-5__background.png" alt="#">
+                    <img class="block-5__puncture" src="img/puncture.png" alt="#">
+                </div>
+                <div class="block-5__image-phone">
+                    <img class="block-5__picture-phone" src="img/major__pic-3-phone-screen.png" alt="#">
+                    <img class="block-5__picture-white-cover" src="img/block-5__phone-white-cover-back.png" alt="#">
+                    <img class="block-5__picture-map" src="img/block-5__phone-map.png" alt="#">
+                    <img class="block-5__picture-lvl-batery" src="img/battarey-level.png" alt="#">
+                    <img class="block-5__picture-bell" src="img/BELL.png" alt="#">
+                    <img class="block-5__picture-00-24" src="img/block-5__phone-00-24.png" alt="#">
+                    <img class="block-5__picture-text-delivery" src="img/block-5__phone-delivering.png" alt="#">
+                    <img class="block-5__picture-green-bot" src="img/block-5__phone-green-bot.png" alt="#">
+                    <img class="block-5__picture-percent" src="img/percent.png" alt="#">
+                    <img class="block-5__picture-image-gaburger" src="img/block-5__phone-image-bb.png" alt="#">
+                    <img class="block-5__picture-screen" src="img/major__pic-5-shape-of-phone.png" alt="#">
+                    <img class="block-5__picture-uber" src="img/major__pic-3-Uber-easts.png" alt="#">
+                    <img class="block-5__picture-wifi" src="img/wifi.png" alt="#">
+                    <img class="block-5__picture-tap-to" src="img/block-5-phone-tap-to.png" alt="#">
+                </div>
+                <div class="block-5__text">
+                    <div class="block-5__text-container">
+                        Track your food in real
+                        time from the <span>restaurant to you.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="block-6">
+                <div class="block-6__container">
+                    <img src="img/major__pic-6.png" alt="#">
+                    <img src="img/block-6__grass-image.png" alt="#">
+                </div>
+                <div class="block-6__text">
+                    <div class="block-6__text-container">
+                        Get the app.Order <span>with
+                            a tap.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="block-7">
+                <div class="block-7__container">
+                </div>
+                <div class="block-7__text-flex">
+
+                    <div class="block-7__column-container-1">
+                        <div class="block-7__title">
+                            Your restaurant, delivered
+                        </div>
+                        <p>Deliver with Uber and earn on your schedule. Depending
+                            on your city, you could deliver with your car, bike
+                            or scooter.</p>
+                        <div class="block-7__btn">
+                            <a href="#"><span> Get Started</span></a>
+                        </div>
+                    </div>
+                    <div class="block-7__line"></div>
+                    <div class="block-7__column-container-2">
+                        <div class="block-7__title">
+                            Your restaurant, delivered
+                        </div>
+                        <p>Partner with Uber Eats for a new way to make money,
+                            reach new diners and deliver food to
+                            your customers.</p>
+                        <div class="block-7__btn">
+                            <a href="#"><span> Get Started</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-8">
+                <div class="block-8__container">
+                    <div class="block-8__line"></div>
+                    <div class="block-8__flex-area">
+                        <div class="block-8__toggle">
+                            <ul class="block-8__toggle-list style">
+                                <li>
+                                    <a class="block-8__toggle-item" href="#">English</a>
+                                    <span class="block-8__arrow"></span>
+                                    <ul class="block-8__sub-toggle-list">
+                                        <li>
+                                            <a class="block-8__sub-toggle-item" href="#">Russian</a>
                                         </li>
-                                        <li class="header-top__btn-header-haki"><a href="#">Подобрать рецепты</a></li>
+                                        <li>
+                                            <a class="block-8__sub-toggle-item" href="#">Spain</a>
+                                        </li>
+                                        <li>
+                                            <a class="block-8__sub-toggle-item" href="#">German</a>
+                                        </li>
                                     </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                <div class="section-top">
-                    <div class="section-top__row-1">
-                        <div class="section-top__row-1-item-1 ">
-                            <img src="img/picture__1.png" alt="#">
-                            <div class="title-picture">
-                                <div class="title-picture__text-1">
-                                    БЛЮДО ДНЯ
-                                </div>
-                                <div class="title-picture__text-2">
-                                    КУРИНЫЕ НОЖКИ НА ГРИЛЕ
-                                </div>
-                                <div class="title-picture__image">
-                                    <div class="title-picture__line"></div>
-                                    <img src="img/picture__forks__spoons.png" alt="#">
-                                    <div class="title-picture__line"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-top__row-1-item-2">
-                            <img src="img/picture__2.png" alt="#">
-                            <div class="title-picture">
-                                <div class="title-picture__text-1">
-                                    ЛУЧШИЕ РЕЦЕПТЫ НЕДЕЛИ
-                                </div>
-                                <div class="title-picture__text-2">
-                                    7 ЛУЧШИХ РЕЦЕПТОВ
-                                    НЕДЕЛИ
-                                </div>
-                                <div class="title-picture__image">
-                                    <img src="img/picture__forks__spoons.png" alt="#">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-top__row-2">
-                        <div class="section-top__row-2-item-1 position-relative">
-                            <img src="img/picture__3.png" alt="#">
-                            <div class="block-text-on-image">
-                                <div class="block-text-on-image__text">
-                                    <div class="block-text-on-image__icon-text">
-                                        <div class="icon-text">ПОЛЕЗНОЕ</div>
-                                    </div>
-                                    <span>КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-top__row-2-item-2 ">
-                            <div class="section-top__row-2-item-2-pic-1 position-relative">
-                                <img src="img/picture__4.png" alt="#">
-                                <div class="block-text-on-image">
-                                    <div class="block-text-on-image__text">
-                                        <div class="block-text-on-image__icon-text">
-                                            <div class="icon-text">ПОЛЕЗНОЕ</div>
-                                        </div>
-                                        <span>КАК ПРИГОТОВИТЬ СЫРНЫЙ ТОРТ</span>
-                                        <span>С ОВОЩАМИ</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section-top__row-2-item-2-pic-2 position-relative">
-                                <img src="img/picture__5.png" alt="#">
-                                <div class="block-text-on-image">
-                                    <div class="block-text-on-image__text">
-                                        <div class="block-text-on-image__icon-text">
-                                            <div class="icon-text">ПОЛЕЗНОЕ</div>
-                                        </div>
-                                        <span>10 ПРОСТЫХ НАПИТКОВ В ЖАРУ</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-top__row-3">
-                        <div class="section-top__row-3-item-1 position-relative">
-                            <img src="img/picture__8.png" alt="#">
-                            <div class="block-text-on-image">
-                                <div class="block-text-on-image__text">
-                                    <div class="block-text-on-image__icon-text">
-                                        <div class="icon-text">ПОЛЕЗНОЕ</div>
-                                    </div>
-                                    <span>ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ЛУЧШИЕ МИТБОЛЫ В БЕЛЬГИИ</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-top__row-3-item-2">
-                            <div class="section-top__row-3-item-2-pic-1 position-relative">
-                                <img src="img/picture__6.png" alt="#">
-                                <div class="block-text-on-image">
-                                    <div class="block-text-on-image__text">
-                                        <div class="block-text-on-image__icon-text">
-                                            <div class="icon-text">ПОЛЕЗНОЕ</div>
-                                        </div>
-                                        <span>ЧТО ТАКОЕ МЕД ?</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section-top__row-3-item-2-pic-2 position-relative">
-                                <img src="img/picture__7.png" alt="#">
-                                <div class="block-text-on-image">
-                                    <div class="block-text-on-image__text">
-                                        <div class="block-text-on-image__icon-text">
-                                            <div class="icon-text">ПОЛЕЗНОЕ</div>
-                                        </div>
-                                        <span>КАК ПРАВИЛЬНО ЗАМЕСИТЬ ДРОЖЕВОЕ</span>
-                                        <span>ТЕСТО</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-middle">
-                    <div class="header-top__logo">
-                        <div class="header-top__line-1"></div>
-                        <div class="header-top__main-logo"><img src="img/header_logo.png" alt="#"></div>
-                        <div class="header-top__line-2"></div>
-                    </div>
-                    <div class="header-top__title">РЕЦЕПТЫ</div>
-                    <div class="section-middle__menu">
-                        <div class="section-middle__btn">
-                            <div class="section-middle__btn-1"><a href="#">Новые рецепты</a></div>
-                            <div class="section-middle__btn-1"><a href="#">Популярные</a></div>
-                            <div class="section-middle__btn-1"><a href="#">Рекомендуем</a></div>
-                        </div>
-                    </div>
-                    <div class="section-middle__picture">
-                        <div class="section-middle__picture-clumn-1">
-                            <div class="card-picture-text">
-                                <div class="card-picture-text__image">
-                                    <img src="img/picture_mid_1.png" alt="#">
-                                    <span>Daria Fedorenko</span>
-                                </div>
-                                <div class="card-picture-text__info">
-                                    <div class="card-picture-text__title">
-                                        Утиные ножки с овощами и
-                                        грудинкой
-                                        фасолью
-                                    </div>
-                                    <div class="card-picture-text__icons">
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-1">135 мин
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-2">Сложно
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-3">125 ккал
-                                        </div>
-                                    </div>
-                                    <div class="card-picture-text__text">говядина, масло топлёное, лук репчатый,
-                                        морковь, редька, перец сладкий, помидоры,
-                                        томат-пюре, картофель, чеснок, бульон мясной,
-                                        соль, перец чёрный, зелень петрушки...
-                                    </div>
-                                    <div class="card-picture-text__footer-icons">
-                                        <div class="card-picture-text__footer-icons-1">16</div>
-                                        <div class="card-picture-text__footer-icons-2"></div>
-                                        <div class="card-picture-text__footer-icons-3"></div>
-                                        <div class="card-picture-text__footer-icons-4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-picture-text">
-                                <div class="card-picture-text__image">
-                                    <img src="img/picture_mid_3.png" alt="#">
-                                    <span>Daria Fedorenko</span>
-                                </div>
-                                <div class="card-picture-text__info">
-                                    <div class="card-picture-text__title">
-                                        Американский тыквенный пирог с корицей
-                                    </div>
-                                    <div class="card-picture-text__icons">
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-1">240 мин
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-2">Сложно
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-3">125 ккал
-                                        </div>
-                                    </div>
-                                    <div class="card-picture-text__text">лук репчатый, морковь, редька, перец
-                                        сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной,соль, перец
-                                        чёрный, зелень петрушки...
-                                    </div>
-                                    <div class="card-picture-text__footer-icons">
-                                        <div class="card-picture-text__footer-icons-1">16</div>
-                                        <div class="card-picture-text__footer-icons-2"></div>
-                                        <div class="card-picture-text__footer-icons-3"></div>
-                                        <div class="card-picture-text__footer-icons-4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-picture-text">
-                                <div class="card-picture-text__image">
-                                    <img src="img/picture_mid_5.png" alt="#">
-                                    <span>Daria Fedorenko</span>
-                                </div>
-                                <div class="card-picture-text__info">
-                                    <div class="card-picture-text__title">
-                                        Соте из брюссельской капусты с варено-копченым окороком
-
-                                    </div>
-                                    <div class="card-picture-text__icons">
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-1">135 мин
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-2">Сложно
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-3">125 ккал
-                                        </div>
-                                    </div>
-                                    <div class="card-picture-text__text">говядина, масло топлёное, лук репчатый,
-                                        морковь, редька, перец сладкий, помидоры,
-                                        томат-пюре, картофель, чеснок, бульон мясной,
-                                        соль, перец чёрный, зелень петрушки...
-                                    </div>
-                                    <div class="card-picture-text__footer-icons">
-                                        <div class="card-picture-text__footer-icons-1">16</div>
-                                        <div class="card-picture-text__footer-icons-2"></div>
-                                        <div class="card-picture-text__footer-icons-3"></div>
-                                        <div class="card-picture-text__footer-icons-4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-picture-text">
-                                <div class="card-picture-text__image">
-                                    <img src="img/picture_mid_7.png" alt="#">
-                                    <span>Daria Fedorenko</span>
-                                </div>
-                                <div class="card-picture-text__info">
-                                    <div class="card-picture-text__title">
-                                        Наварен из говядины
-                                    </div>
-                                    <div class="card-picture-text__icons">
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-1">135 мин
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-2">Сложно
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-3">125 ккал
-                                        </div>
-                                    </div>
-                                    <div class="card-picture-text__text">лук репчатый, морковь, редька, перец
-                                        сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной,соль, перец
-                                        чёрный, зелень петрушки...
-                                    </div>
-                                    <div class="card-picture-text__footer-icons">
-                                        <div class="card-picture-text__footer-icons-1">16</div>
-                                        <div class="card-picture-text__footer-icons-2"></div>
-                                        <div class="card-picture-text__footer-icons-3"></div>
-                                        <div class="card-picture-text__footer-icons-4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-picture-text">
-                                <div class="card-picture-text__image">
-                                    <img src="img/picture_mid_9.png" alt="#">
-                                    <span>Daria Fedorenko</span>
-                                </div>
-                                <div class="card-picture-text__info">
-                                    <div class="card-picture-text__title">
-                                        Печеночный торт с морковью и луком
-                                    </div>
-                                    <div class="card-picture-text__icons">
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-1">135 мин
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-2">Сложно
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-3">125 ккал
-                                        </div>
-                                    </div>
-                                    <div class="card-picture-text__text">лук репчатый, морковь, редька, перец
-                                        сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной,соль, перец
-                                        чёрный, зелень петрушки...
-                                    </div>
-                                    <div class="card-picture-text__footer-icons">
-                                        <div class="card-picture-text__footer-icons-1">16</div>
-                                        <div class="card-picture-text__footer-icons-2"></div>
-                                        <div class="card-picture-text__footer-icons-3"></div>
-                                        <div class="card-picture-text__footer-icons-4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section-middle__picture-clumn-2">
-                            <div class="card-picture-text">
-                                <div class="card-picture-text__image">
-                                    <img src="img/picture_mid_2.png" alt="#">
-                                    <span>Daria Fedorenko</span>
-                                </div>
-                                <div class="card-picture-text__info">
-                                    <div class="card-picture-text__title">
-                                        Салат из свеклы с козьим сыром и медовой заправкой
-                                    </div>
-                                    <div class="card-picture-text__icons">
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-1">135 мин
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-2">Сложно
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-3">125 ккал
-                                        </div>
-                                    </div>
-                                    <div class="card-picture-text__text">говядина, масло топлёное, лук репчатый,
-                                        морковь, редька, перец сладкий, помидоры,
-                                        томат-пюре, картофель
-                                    </div>
-                                    <div class="card-picture-text__footer-icons">
-                                        <div class="card-picture-text__footer-icons-1">16</div>
-                                        <div class="card-picture-text__footer-icons-2"></div>
-                                        <div class="card-picture-text__footer-icons-3"></div>
-                                        <div class="card-picture-text__footer-icons-4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-picture-text">
-                                <div class="card-picture-text__image">
-                                    <img src="img/picture_mid_4.png" alt="#">
-                                    <span>Daria Fedorenko</span>
-                                </div>
-                                <div class="card-picture-text__info">
-                                    <div class="card-picture-text__title">
-                                        Салат «Цезарь» традиционный
-                                        фасолью
-                                    </div>
-                                    <div class="card-picture-text__icons">
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-1">135 мин
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-2">Сложно
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-3">125 ккал
-                                        </div>
-                                    </div>
-                                    <div class="card-picture-text__text">говядина, масло топлёное, лук репчатый,
-                                        морковь, редька, перец сладкий, помидоры,
-                                        томат-пюре, картофель, чеснок, бульон мясной,
-                                        соль, перец чёрный
-                                    </div>
-                                    <div class="card-picture-text__footer-icons">
-                                        <div class="card-picture-text__footer-icons-1">16</div>
-                                        <div class="card-picture-text__footer-icons-2"></div>
-                                        <div class="card-picture-text__footer-icons-3"></div>
-                                        <div class="card-picture-text__footer-icons-4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-picture-text">
-                                <div class="card-picture-text__image">
-                                    <img src="img/picture_mid_6.png" alt="#">
-                                    <span>Daria Fedorenko</span>
-                                </div>
-                                <div class="card-picture-text__info">
-                                    <div class="card-picture-text__title">
-                                        Жареные баклажаны с помидорами
-                                    </div>
-                                    <div class="card-picture-text__icons">
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-1">135 мин
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-2">Сложно
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-3">125 ккал
-                                        </div>
-                                    </div>
-                                    <div class="card-picture-text__text">говядина, масло топлёное, лук репчатый,
-                                        морковь, редька, перец сладкий, помидоры,
-                                        томат-пюре, картофель
-                                    </div>
-                                    <div class="card-picture-text__footer-icons">
-                                        <div class="card-picture-text__footer-icons-1">16</div>
-                                        <div class="card-picture-text__footer-icons-2"></div>
-                                        <div class="card-picture-text__footer-icons-3"></div>
-                                        <div class="card-picture-text__footer-icons-4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-picture-text">
-                                <div class="card-picture-text__image">
-                                    <img src="img/picture_mid_8.png" alt="#">
-                                    <span>Daria Fedorenko</span>
-                                </div>
-                                <div class="card-picture-text__info">
-                                    <div class="card-picture-text__title">
-                                        Брюссельская капуста с белым соусом с сыром
-                                    </div>
-                                    <div class="card-picture-text__icons">
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-1">135 мин
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-2">Сложно
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-3">125 ккал
-                                        </div>
-                                    </div>
-                                    <div class="card-picture-text__text">говядина, масло топлёное, лук репчатый,
-                                        морковь, редька, перец сладкий, помидоры,
-                                        томат-пюре, картофель, чеснок, бульон мясной,
-                                        соль, перец чёрный
-                                    </div>
-                                    <div class="card-picture-text__footer-icons">
-                                        <div class="card-picture-text__footer-icons-1">16</div>
-                                        <div class="card-picture-text__footer-icons-2"></div>
-                                        <div class="card-picture-text__footer-icons-3"></div>
-                                        <div class="card-picture-text__footer-icons-4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-picture-text">
-                                <div class="card-picture-text__image">
-                                    <img src="img/picture_mid_10.png" alt="#">
-                                    <span>Daria Fedorenko</span>
-                                </div>
-                                <div class="card-picture-text__info">
-                                    <div class="card-picture-text__title">
-                                        Классический крабовый салат с огурцом и мидиями </div>
-                                    <div class="card-picture-text__icons">
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-1">135 мин
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-2">Сложно
-                                        </div>
-                                        <div class="card-picture-text__sub-info card-picture-text__icon-3">125 ккал
-                                        </div>
-                                    </div>
-                                    <div class="card-picture-text__text">говядина, масло топлёное, лук репчатый,
-                                        морковь, редька, перец сладкий, помидоры,
-                                        томат-пюре, картофель, чеснок, бульон мясной,
-                                        соль, перец чёрный
-                                    </div>
-                                    <div class="card-picture-text__footer-icons">
-                                        <div class="card-picture-text__footer-icons-1">16</div>
-                                        <div class="card-picture-text__footer-icons-2"></div>
-                                        <div class="card-picture-text__footer-icons-3"></div>
-                                        <div class="card-picture-text__footer-icons-4"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section-bottom">
-                    <div class="section-bottom__logo">
-                        <div class="section-bottom__line-1"></div>
-                        <div class="section-bottom__main-logo"><img src="img/header_logo.png" alt="#"></div>
-                        <div class="section-bottom__line-2"></div>
-                    </div>
-                    <div class="section-bottom__title">#ГОРЯЧАЯПОДБОРКА</div>
-                    <div class="section-bottom__cards">
-                        <div class="section-bottom__item-1">
-                            <span>ПОХМЕЛЬНЫЕ РЕЦЕПТЫ</span><img src="img/picture__foter__1.png" alt="#"></div>
-                        <div class="section-bottom__item-1">
-                            <span>МАСЛЕНИЦА</span><img src="img/footer__picture_2.png" alt="#"></div>
-                        <div class="section-bottom__item-1">
-                            <span>РЕЦЕПТЫ
-                                ДЛЯ </br> ДЕТЕЙ</span>
-                            <img src="img/footer__picture_3.png" alt="#"></div>
-                        <div class="section-bottom__item-1">
-                            <span>ЗДОРОВОЕ ПИТАНИЕ</span><img src="img/footer__picture_4.png" alt="#"></div>
-                    </div>
-                    <div class="section-bottom__title">ТОП АВТОРОВ</div>
-                    <div class="section-bottom__imge-avatars"><img src="img/footer__avatar_1.png" alt="#"></div>
-                </div>
-                <footer>
-                    <div class="section-bottom__email">
-                        <div class="section-bottom__eamil-title"><span>ПОДПИШИТЕСЬ НА РАССЫЛКУ РЕЦЕПТОВ И СОВЕТОВ</span>
-                        </div>
-                        <div class="section-bottom__eamil-input">
-                            <input type="text" />
-                            <a href="#">
-                                <div class="section-bottom__eamil-bottom"></div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer-wrapper">
-                        <div class="footer-items">
-                            <ul class="footer-items__list">
-                                <li><a href="#">ГЛАВНАЯ</a></li>
-                                <li><a href="#">РЕЦЕПТЫ</a></li>
-                                <li><a href="#">ИДЕИ</a></li>
-                                <li><a href="#">ЖУРНАЛ</a></li>
-                                <li><a href="#">АВТОРЫ</a></li>
-                                <li><a href="#">РЕКЛАМА</a></li>
-                                <li><a href="#">FAQ</a></li>
+                                </li>
                             </ul>
-                            <div class="footer-items__icons">
-                                <div class="footer-items__icon-1"><img src="fonts/ivon__vk.png" alt="#"></div>
-                                <div class="footer-items__icon-1"><img src="fonts/icon__facebook1.png" alt="#"></div>
-                                <div class="footer-items__icon-1"><img src="fonts/-instagram_image.png" alt="#"></div>
-                                <div class="footer-items__icon-1"><img src="fonts/Google_+_hover.png" alt="#"></div>
-                            </div>
+                        </div>
+                        <div class="block-8__column-1 style">
+                            <p><a href="#">About Uber Eats</a></p>
+                            <p><a href="#">Become a Delivery Partner</a></p>
+                            <p><a href="#">Become a Restaurant Partner</a></p>
+                        </div>
+                        <div class="block-8__column-2 style">
+                            <p><a href="#">See all cities</a></p>
+                            <p><a href="#">Pricing</a></p>
+                            <p><a href="#">Help</a></p>
+                            <p><a href="#">FAQs</a></p>
+                            <p><a href="#">Blog</a></p>
+                        </div>
+                        <div class="block-8__column-3 style">
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Privacy</a></p>
+                            <p><a href="#">Terms</a></p>
+                        </div>
+                        <div class="block-8__column-4 style">
+                            <p>Download Uber Eates App From :</p>
                         </div>
                     </div>
-                </footer>
+                    <div class="block-8__bottom-r ">
+                        © 2020 Uber Technologies Inc
+                    </div>
+                </div>
             </div>
-
         </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="scrypt.js"></script>
-
+    </div>
 </body>
-
-</html>
